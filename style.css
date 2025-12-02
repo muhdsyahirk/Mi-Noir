@@ -14,8 +14,67 @@ html {
   scroll-behavior: smooth;
 }
 /*  */
+/* NAV */
 /*  */
+nav {
+}
+/*  */
+/* ALL */
 /*  */
 .section {
   min-height: 100vh;
+  background-color: var(--black);
+}
+/*  */
+/* MAIN */
+/*  */
+.section-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .main-left {
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+  .main-right {
+    border: 1px solid var(--white);
+    max-width: 410px;
+    color: var(--white);
+  }
+}
+/*  */
+/* MEMBERS */
+/*  */
+.section-members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  .member-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--white);
+    color: var(--white);
+    max-width: 300px;
+    align-items: center;
+
+    .member-nickname {
+      p {
+        font-size: 40px;
+      }
+    }
+    .member-specialty {
+      p {
+        font-size: 28px;
+      }
+    }
+    .member-quote {
+      p {
+        font-size: 28px;
+      }
+    }
+  }
 }
