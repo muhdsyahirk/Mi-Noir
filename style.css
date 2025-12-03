@@ -8,7 +8,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 html {
   scroll-behavior: smooth;
@@ -68,32 +68,43 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 20px;
-
-  .member-container {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--white);
-    color: var(--white);
-    max-width: 300px;
-    align-items: center;
-    gap: 14px;
-
-    .member-nickname {
-      p {
-        font-size: 35px;
-      }
-    }
-    .member-specialty {
-      p {
-        font-size: 18px;
-        text-align: center;
-      }
-    }
-    .member-quote {
-      p {
-        font-size: 18px;
-        text-align: center;
-      }
-    }
-  }
+}
+.member-container {
+  background-color: transparent;
+  width: 300px;
+  height: 418.99px;
+  perspective: 1000px;
+}
+.member-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.member-container:hover .member-inner {
+  transform: rotateY(180deg);
+}
+.member-front,
+.member-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.member-front {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 12px;
+}
+.member-back {
+  background-color: var(--white);
+  color: var(--black);
+  transform: rotateY(180deg);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
