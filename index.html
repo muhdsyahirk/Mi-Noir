@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi-Noir</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/ec08b82533.js"
       crossorigin="anonymous"
@@ -21,7 +22,35 @@
               ><img src="./img/Logo.png" alt="MI-NOIR" width="70px"
             /></a>
           </li>
-          <li><a href="#ctfs">CTFS&nbsp&nbsp&nbsp&nbsp</a></li>
+          <li class="ctfs-menu-item">
+            <a href="#ctfs" class="ctfs-nav-link">CTFS&nbsp&nbsp&nbsp&nbsp</a>
+            <div class="ctfs-dropdown">
+              <a href="./ctf/dawgctf.html" class="ctf-item" data-index="0">
+                <span class="ctf-badge">01</span>
+                <span class="ctf-name">DawgCTF</span>
+                <span class="ctf-year">2025</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="./ctf/l3akctf.html" class="ctf-item" data-index="1">
+                <span class="ctf-badge">02</span>
+                <span class="ctf-name">L3akCTF</span>
+                <span class="ctf-year">2025</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="./ctf/umdctf/umdctf.html" class="ctf-item" data-index="2">
+                <span class="ctf-badge">03</span>
+                <span class="ctf-name">UMDCTF</span>
+                <span class="ctf-year">2025</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="./ctf/glacierctf.html" class="ctf-item" data-index="3">
+                <span class="ctf-badge">04</span>
+                <span class="ctf-name">GlacierCTF</span>
+                <span class="ctf-year">2025</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
