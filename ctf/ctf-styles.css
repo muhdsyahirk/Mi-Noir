@@ -1,0 +1,355 @@
+/* ================================
+   CTF Writeup Pages - Global Styles
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #000000 100%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ================================
+   Header Styles
+   ================================ */
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 0;
+    border-bottom: 2px solid rgba(155, 198, 240, 0.3);
+    position: relative;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #9bc6f0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(155, 198, 240, 0.3);
+    animation: glow 3s ease-in-out infinite;
+}
+
+.header p {
+    color: #a9a9a9;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* ================================
+   Animations
+   ================================ */
+
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 20px rgba(155, 198, 240, 0.3); }
+    50% { text-shadow: 0 0 30px rgba(155, 198, 240, 0.6); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#content {
+    animation: fadeIn 0.6s ease-in;
+}
+
+/* ================================
+   Typography
+   ================================ */
+
+h2 {
+    font-size: 32px;
+    color: #9bc6f0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(155, 198, 240, 0.2);
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #64809b;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h4, h5, h6 {
+    color: #a9a9a9;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+strong {
+    color: #9bc6f0;
+    font-weight: 600;
+}
+
+em {
+    color: #64809b;
+    font-style: italic;
+}
+
+/* ================================
+   Code Styles
+   ================================ */
+
+code {
+    background-color: rgba(100, 128, 155, 0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #9bc6f0;
+    border: 1px solid rgba(155, 198, 240, 0.2);
+}
+
+pre {
+    background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 60, 0.8) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid rgba(155, 198, 240, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #9bc6f0;
+    font-size: 13px;
+    line-height: 1.6;
+    border: none;
+}
+
+/* ================================
+   Blockquotes
+   ================================ */
+
+blockquote {
+    border-left: 4px solid #64809b;
+    margin: 20px 0;
+    padding: 15px 20px;
+    color: #a9a9a9;
+    font-style: italic;
+    background: rgba(100, 128, 155, 0.1);
+    border-radius: 4px;
+}
+
+/* ================================
+   Links
+   ================================ */
+
+a {
+    color: #9bc6f0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #64809b;
+    border-bottom-color: #64809b;
+    text-shadow: 0 0 10px rgba(155, 198, 240, 0.3);
+}
+
+/* ================================
+   Lists
+   ================================ */
+
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #d0d0d0;
+}
+
+/* ================================
+   Tables
+   ================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid rgba(155, 198, 240, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: rgba(100, 128, 155, 0.3);
+    color: #9bc6f0;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(155, 198, 240, 0.3);
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(155, 198, 240, 0.1);
+    color: #d0d0d0;
+}
+
+tr:hover {
+    background-color: rgba(155, 198, 240, 0.05);
+}
+
+/* ================================
+   Navigation
+   ================================ */
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: rgba(100, 128, 155, 0.2);
+    border: 1px solid rgba(155, 198, 240, 0.2);
+    border-radius: 6px;
+    color: #9bc6f0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(100, 128, 155, 0.3);
+    border-color: rgba(155, 198, 240, 0.4);
+    transform: translateX(-5px);
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(155, 198, 240, 0.2);
+}
+
+.footer p {
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+/* ================================
+   Horizontal Rule
+   ================================ */
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(155, 198, 240, 0.3), transparent);
+    margin: 40px 0;
+}
+
+/* ================================
+   Utility Classes
+   ================================ */
+
+.highlight {
+    background: rgba(155, 198, 240, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #9bc6f0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(100, 128, 155, 0.3);
+    border: 1px solid rgba(155, 198, 240, 0.3);
+    border-radius: 20px;
+    color: #9bc6f0;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    pre {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    pre {
+        padding: 12px;
+        font-size: 11px;
+    }
+}
