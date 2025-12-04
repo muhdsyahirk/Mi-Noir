@@ -63,13 +63,17 @@ nav {
         }
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -4px;
           left: 0;
           width: 0;
           height: 2px;
-          background: linear-gradient(90deg, var(--light-blue), var(--dark-blue));
+          background: linear-gradient(
+            90deg,
+            var(--light-blue),
+            var(--dark-blue)
+          );
           transition: width 0.3s ease;
         }
 
@@ -90,8 +94,8 @@ nav {
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid rgba(155, 198, 240, 0.3);
         border-radius: 12px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 
-                    0 0 20px rgba(100, 128, 155, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+          0 0 20px rgba(100, 128, 155, 0.2);
         opacity: 0;
         visibility: hidden;
         transform: translateX(-50%) translateY(-10px);
@@ -100,7 +104,7 @@ nav {
         overflow: hidden;
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           top: -6px;
           left: 50%;
@@ -127,7 +131,7 @@ nav {
           overflow: hidden;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             top: 0;
