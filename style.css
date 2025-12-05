@@ -281,11 +281,14 @@ body {
 
   .main-left {
     img {
-      /* box-shadow: var(--black) -28px 28px 0px -2px, var(--white) -28px 28px; */
-      box-shadow: rgba(255, 255, 255, 0.4) -5px 5px,
+      /* box-shadow: rgba(255, 255, 255, 0.4) -5px 5px,
         rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px,
         rgba(255, 255, 255, 0.1) -20px 20px,
-        rgba(255, 255, 255, 0.05) -25px 25px;
+        rgba(255, 255, 255, 0.05) -25px 25px; */
+      box-shadow: var(--black) -10px 10px 0px -3px, var(--white) -10px 10px,
+        var(--black) -20px 20px 0px -3px, var(--white) -20px 20px,
+        var(--black) -30px 30px 0px -3px, var(--white) -30px 30px,
+        var(--black) -40px 40px 0px -3px, var(--white) -40px 40px;
     }
   }
   .main-right {
