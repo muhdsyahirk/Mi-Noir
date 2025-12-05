@@ -291,7 +291,7 @@ body {
   .main-right {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     max-width: 520px;
     color: var(--white);
 
@@ -314,8 +314,9 @@ body {
     .main-right-bot {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 2px;
       letter-spacing: 1px;
+      line-height: 24px;
       text-align: justify;
 
       .text-underline {
@@ -337,9 +338,13 @@ body {
         margin-left: 42px;
       }
 
-      a {
-        text-decoration: none;
-        color: var(--white);
+      .mi-noir-ctftime {
+        margin-top: 10px;
+
+        a {
+          text-decoration: none;
+          color: var(--white);
+        }
       }
     }
   }
