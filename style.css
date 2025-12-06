@@ -138,7 +138,11 @@ nav {
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent);
+            background: linear-gradient(
+              90deg,
+              rgba(255, 255, 255, 0.18),
+              transparent
+            );
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: -1;
@@ -450,12 +454,20 @@ body {
   justify-content: space-evenly;
 }
 .member-title {
+  transform: translateX(8%);
+  opacity: 0;
+  transition: 1s;
+
   p {
     font-size: 50px;
     letter-spacing: 8px;
     font-weight: bold;
     color: var(--white);
   }
+}
+.member-title-show {
+  transform: translate(0);
+  opacity: 1;
 }
 .member-members {
   display: flex;
@@ -525,6 +537,10 @@ body {
     /* margin-bottom: 10px; */
     p {
       font-size: 20px;
+
+      span {
+        font-style: italic;
+      }
     }
   }
   .member-sosmed {
@@ -533,6 +549,11 @@ body {
       font-size: 18px;
       color: var(--black);
       text-decoration: none;
+      transition: letter-spacing 0.5s;
+
+      &:hover {
+        letter-spacing: 0.5px;
+      }
     }
   }
 }
@@ -550,6 +571,14 @@ body {
   letter-spacing: 8px;
   font-weight: bold;
   color: var(--white);
+
+  transform: translateX(-8%);
+  opacity: 0;
+  transition: 1s;
+}
+.ctfs-title-show {
+  transform: translate(0);
+  opacity: 1;
 }
 .ctfs-container {
   display: flex;
@@ -595,28 +624,7 @@ body {
 .ctfs-list:hover .ctf-inner {
   transform: rotateY(-180deg);
 }
-.ctf-front,
-.ctf-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-.ctf-front {
-  background-color: var(--white);
-  color: var(--black);
-  border-radius: 100%;
-}
-
 .ctf-back-inner {
-  height: 88%;
-  margin: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--white);
-
   .ctf-year {
     p {
       font-size: 18px;
@@ -640,6 +648,11 @@ body {
       font-size: 18px;
       text-decoration: none;
       color: var(--white);
+      transition: letter-spacing 0.5s;
+
+      &:hover {
+        letter-spacing: 1px;
+      }
     }
   }
 }
@@ -699,7 +712,7 @@ footer {
   }
 }
 
-/* Replace your existing .ctf-inner styles with these */
+/* Replace existing .ctf-inner styles with these */
 .ctf-inner {
   position: relative;
   width: 100%;
@@ -732,7 +745,7 @@ footer {
 .ctf-back {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.3);
   transform: rotateY(180deg);
   display: flex;
   align-items: center;
@@ -847,8 +860,4 @@ footer {
   to {
     transform: translateX(calc(-100% - 35px));
   }
-}
-
-.tmp {
-  background-color: black;
 }
